@@ -11,8 +11,9 @@ class Solution:
             element = element / 2
             heapq.heappush(pq, -element)
             count += 1
-            current_sum -= element
+            
 
         return count
+            current_sum -= element
 
 [
