@@ -8,7 +8,7 @@ class Solution:
             element = -heapq.heappop(pq)
 
         heapq.heapify(pq)
-            element = ceil(element/3)
+            element = ceil(element//3) + 1
         score = []
             score.append(element)
 
