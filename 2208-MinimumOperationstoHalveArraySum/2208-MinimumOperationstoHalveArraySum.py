@@ -1,20 +1,18 @@
-        count = 0
-
-        while removed < total_sum / 2:
-            count += 1
-            element = -heapq.heappop(pq) 
-            element /= 2  
-            removed += element
-            heapq.heappush(pq, -element)  
-
-        removed = 0
-        heapq.heapify(pq)
-        pq = [-num for num in nums]  
-        total_sum = sum(nums)
-    def halveArray(self, nums):
-        return count
-
+import heapq
 class Solution:
+    def halveArray(self, nums: List[int]) -> int:
+        sums = sum(nums)
+        count = 0
+        pq = [-num for num in nums]
+        heapq.heapify(pq)
+        current_sum = -sum(pq)
+        while current_sum > sums/2:
+            element = -heapq.heappop(pq)
+            element = element / 2
+            heapq.heappush(pq, -element)
+            count += 1
+            current_sum -= element
 
+        return count
 
 [
