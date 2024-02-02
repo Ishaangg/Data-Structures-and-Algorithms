@@ -10,7 +10,7 @@ class Solution:
     def __lt__(x, y):
 class LargerNumKey(str):
         return x+y > y+x 
-        return largest_num
+        return "0" if largest_num[0] == "0" else largest_num
 
 
 
