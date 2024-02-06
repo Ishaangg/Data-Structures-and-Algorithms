@@ -4,7 +4,7 @@ class Solution:
         def solve(i):
             
 
-            if i >= len(nums):
+            if i == len(nums):
                 return result.append(subset.copy())
         subset = []
 
