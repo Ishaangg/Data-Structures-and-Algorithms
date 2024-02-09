@@ -1,4 +1,3 @@
-        total = 0
         start = 0
 
         for end in range(len(fruits)):
@@ -11,8 +10,7 @@
 
                 if count[fruits[start]] == 0:
                     del count[fruits[start]]
-        res = 0
-    def totalFruit(self, fruits: List[int]) -> int:
-        count = collections.defaultdict(int)
-class Solution:
-[1,2,1]
+
+            res = max(total, res)
+        return res
+[
