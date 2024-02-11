@@ -11,8 +11,10 @@
 
         for i in range(n):
             s, count = "", 0
-        n, seen = len(nums), set()
-    def countDistinct(self, nums, k, p):
-class Solution:
             
+    def countDistinct(self, nums, k, p):
+        n, seen = len(nums), set()
+
+        return len(seen)
+
 [
